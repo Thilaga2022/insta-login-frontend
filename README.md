@@ -54,7 +54,7 @@ insta-login-clone/
 ├── package.json
 └── README.md
 
-git clone https://github.com/yourusername/insta-login-clone.git
+git clone https://github.com/Thilaga2022/insta-login-frontend.git
 cd insta-login-clone
 
 ## Install Dependencies
