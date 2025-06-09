@@ -1,0 +1,132 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+/* Hide by default */
+img{
+  display: none;
+}
+
+/* Show from md screen (768px and up) */
+@media (min-width: 768px) {
+  img {
+    display: block; /* or inline-block or inline if needed */
+  }
+}
+h1{
+ font-family: "Lobster", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.field{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+/* User name input */
+#userdetail{
+  width: 80%;
+  padding: 14px 12px;
+  font-size: 0.7rem;
+}
+#labeluser{
+  position: absolute;
+  top:15%;
+  left: 8%;
+  height: 36px;
+  transform: translateY(-45%);
+  transition: all ease;
+  font-size: 0.7rem;
+  margin: 5px;
+  color: grey;
+}
+#userdetail:not(:placeholder-shown)+#labeluser,
+#userdetail:focus+#labeluser{
+  top:10%;
+  font-size: 0.5rem;
+  
+}
+/* Password input */
+
+#password{
+  width: 80%;
+  padding: 14px 12px;
+}
+#labelpass{
+  position: absolute;
+  top:55%;
+  left: 8%;
+  height: 36px;
+  transform: translateY(-50%);
+  transition: all ease;
+  font-size: 0.7rem;
+  margin: 5px;
+  color: grey;
+}
+#password:not(:placeholder-shown)+#labelpassword,
+#password:focus+#labelpass{
+  top:50%;
+  font-size: 0.5rem;
+  
+}
+.small-line {
+  width: 130px;        /* Line width */
+  height: 1px;        /* Line thickness */
+  background-color: rgba(189, 184, 184, 0.774);
+  border: none;
+  margin: 10px 10px;
+  display: inline-block;
+  margin-top: 30px;
+}
+a{
+  text-decoration: none;
+  color: #29376bbf;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.fbdiv a{
+  color: #4CB5F9;
+}
+.fblogin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2vh;
+}
+.signup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.signup a{
+  color: #4CB5F9;
+}
+.signup p{
+  font-size: 0.8rem;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#footer a:hover{
+  text-decoration: underline;
+}
